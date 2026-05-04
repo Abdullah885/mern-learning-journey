@@ -46,7 +46,7 @@ console.log("Flagged:",flagged);
 
 
 
-//Task: Write a function called getSummary that takes the bugs array and returns an object like this:{ total: 5, open: 4, closed: 1, critical: 2 }
+//Task: Write a function called getSummary that takes the bugs array and returns an object like this:{ total: 5, open: 4, closed: 1, critical: 2 }.
 
 const getSummary = (bugs) =>{
     return{
