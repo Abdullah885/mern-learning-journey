@@ -69,8 +69,8 @@ test("get specific todo by index" , async ({page}) =>{
   await todos.nth(1).locator(".toggle").click();
 
   // Assert each todo's state
-  await expect(todos.nth(0)).not.toHaveClass(/completed/); // ❌ not done
-  await expect(todos.nth(1)).toHaveClass(/completed/);     // ✅ done
-  await expect(todos.nth(2)).not.toHaveClass(/completed/); // ❌ not done
+  await expect(todos.nth(0)).not.toHaveClass(/completed/); 
+  await expect(todos.nth(1)).toHaveClass(/completed/);     
+  await expect(todos.nth(2)).not.toHaveClass(/completed/); 
 });
     
