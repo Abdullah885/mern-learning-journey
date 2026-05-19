@@ -33,7 +33,7 @@ class TodoPage{
 
 
    async completeAll() {
-    await this.toggleAll.click(); // ✅ direct click
+    await this.toggleAll.click(); 
 }
 }
 
