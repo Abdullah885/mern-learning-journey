@@ -27,6 +27,14 @@ class TodoPage{
         await this.todoItems.nth(index).hover();
         await this.todoItems.nth(index).locator(".destroy").click();
     }
+
+    async deleteAll() {
+        const count = await this.todoItems.count();
+        for (let i = 0; i < count; i++) {
+            await this.todoItems.first().hover();
+            await this.todoItems.first().locator(".destroy").click();
+  }
+}
     async getCount(){
         return await this.todoItems.count();
     }
