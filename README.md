@@ -7,12 +7,12 @@ Daily coding practice with real-world examples.
 ## Progress
 | Week | Topic | Status |
 |------|-------|--------|
-| Week 1 | JavaScript Fundamentals (ES6+) | ✅ Complete |
-| Week 2 | Playwright Test Automation      | 🔄 In Progress |
-| Week 3 | Playwright — Page Object Model  | ⏳ Upcoming |
-| Week 4 | API Testing + Newman CLI        | ⏳ Upcoming |
-| Week 5 | Docker Basics                   | ⏳ Upcoming |
-| Week 6 | GitHub Actions CI/CD            | ⏳ Upcoming |
+| Week 1 | JavaScript Fundamentals (ES6+)  | ✅ Complete |
+| Week 2 | Playwright Test Automation      | ✅ Complete |
+| Week 3 | API Testing + Postman + Newman  | 🔄 In Progress |
+| Week 4 | Docker Basics                   | ⏳ Upcoming |
+| Week 5 | GitHub Actions CI/CD Advanced   | ⏳ Upcoming |
+| Week 6 | Cloud Deployment (AWS/Azure)    | ⏳ Upcoming |
 
 ## Stack Being Learned
 - JavaScript (ES6+)
