@@ -1,0 +1,46 @@
+name: Playwright Tests
+
+on:
+  push:
+    branches: [ main ]        # runs when you push to main
+  pull_request:
+    branches: [ main ]        # runs when you open a PR
+
+jobs:
+  test:
+    runs-on: ubuntu-latest    # runs on a fresh Linux machine in the cloud
+
+    steps:
+      # Step 1 — checkout your code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2 — install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Step 3 — install dependencies
+      - name: Install dependencies
+        run: npm ci
+        working-directory: week2
+
+      # Step 4 — install browsers
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+        working-directory: week2
+
+      # Step 5 — run all tests
+      - name: Run Playwright tests
+        run: npx playwright test
+        working-directory: week2
+
+      # Step 6 — upload report even if tests fail
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        if: always()           # upload even if tests fail
+        with:
+          name: playwright-report
+          path: week2/playwright-report/
+          retention-days: 30
