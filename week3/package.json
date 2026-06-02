@@ -5,6 +5,8 @@
     "test:api": "newman run JSONPlaceholder.postman_collection.json -e JSONPlaceholder.postman_environment.json -r cli,htmlextra"
   },
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
     "newman": "^6.0.0",
     "newman-reporter-htmlextra": "^1.23.0"
   }
