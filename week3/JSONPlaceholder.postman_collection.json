@@ -140,9 +140,8 @@
               "    pm.expect(body.id).to.exist;\r",
               "});\r",
               "\r",
-              "// Save id for later use — important concept\r",
-              "const responseBody = pm.response.json();\r",
-              "pm.collectionVariables.set(\"postId\", responseBody.id);"
+              "// Save id for later use — important concept\r"
+             
             ],
             "type": "text/javascript",
             "packages": {},

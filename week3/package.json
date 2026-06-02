@@ -1,0 +1,11 @@
+{
+  "name": "week3-api-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test:api": "newman run JSONPlaceholder.postman_collection.json -e JSONPlaceholder.postman_environment.json -r cli,htmlextra"
+  },
+  "devDependencies": {
+    "newman": "^6.0.0",
+    "newman-reporter-htmlextra": "^1.23.0"
+  }
+}
