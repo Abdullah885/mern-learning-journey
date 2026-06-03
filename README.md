@@ -9,8 +9,8 @@ Daily coding practice with real-world examples.
 |------|-------|--------|
 | Week 1 | JavaScript Fundamentals (ES6+)  | ✅ Complete |
 | Week 2 | Playwright Test Automation      | ✅ Complete |
-| Week 3 | API Testing + Postman + Newman  | 🔄 In Progress |
-| Week 4 | Docker Basics                   | ⏳ Upcoming |
+| Week 3 | API Testing + Postman + Newman  | ✅ Complete |
+| Week 4 | Docker Basics                   | 🔄 In Progress |
 | Week 5 | GitHub Actions CI/CD Advanced   | ⏳ Upcoming |
 | Week 6 | Cloud Deployment (AWS/Azure)    | ⏳ Upcoming |
 
