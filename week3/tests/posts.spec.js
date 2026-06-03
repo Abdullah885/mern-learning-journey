@@ -80,3 +80,16 @@ test.describe("Data-driven — multiple posts exist", () => {
     });
   }
 });
+
+test.describe("Data-driven — posts by user", () => {
+  const userIds = [1, 2, 3];
+
+  for (const userId of userIds) {
+    test(`user ${userId} has posts`, async ({ request }) => {
+      const response = await request.get(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`);
+      expect(response.status()).toBe(200);
+      const posts = await response.json();
+      expect(posts.length).toBeGreaterThan(0);
+    });
+  }
+});
