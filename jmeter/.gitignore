@@ -1,0 +1,4 @@
+# JMeter generated artifacts
+*.jtl
+**/report/
+*.log
